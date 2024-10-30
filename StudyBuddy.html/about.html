@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About StudyBuddy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f4f8fc;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* About Section Container */
+        .about-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Title Styling */
+        .about-container h1 {
+            font-size: 2.5em;
+            color: #007acc;
+            margin-bottom: 15px;
+        }
+
+        /* Subtitle Styling */
+        .about-container p.subtitle {
+            font-size: 1.2em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Features List */
+        .features-list {
+            list-style: none;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .features-item {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background: #eaf4fc;
+            border-radius: 6px;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        /* Icon Styling */
+        .features-item i {
+            color: #007acc;
+            font-size: 1.5em;
+            margin-right: 15px;
+        }
+
+        /* Feature Description Styling */
+        .features-item span {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* Navigation Buttons */
+        .nav-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 300px;
+            padding: 0 20px;
+        }
+
+        .nav-button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .nav-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="about-container">
+        <h1>About StudyBuddy</h1>
+        <p class="subtitle">Your Personalized Cartoon Character for Fun, Interactive Learning</p>
+
+        <ul class="features-list">
+            <li class="features-item">
+                <i class="fas fa-book-reader"></i>
+                <span>Make learning engaging through character-driven narratives</span>
+            </li>
+            <li class="features-item">
+                <i class="fas fa-question-circle"></i>
+                <span>Provide interactive quizzes to reinforce material retention</span>
+            </li>
+            <li class="features-item">
+                <i class="fas fa-chart-pie"></i>
+                <span>Offer visual summaries to simplify complex content</span>
+            </li>
+        </ul>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <button class="nav-button" onclick="window.location.href='index.html'">Home</button>
+            <button class="nav-button" onclick="window.location.href='profile.html'">Next</button>
+        </div>
+    </div>
+
+</body>
+</html>

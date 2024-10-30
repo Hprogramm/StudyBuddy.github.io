@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Streaks & Badges - StudyBuddy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f4f8fc;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        /* Streaks & Badges Container */
+        .streaks-badges-container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Title Styling */
+        .streaks-badges-container h1 {
+            font-size: 2.5em;
+            color: #007acc;
+            margin-bottom: 20px;
+        }
+
+        /* Streak Section */
+        .streak-section {
+            margin-bottom: 30px;
+        }
+
+        .streaks-badge {
+            background-color: #eaf4fc;
+            border-radius: 6px;
+            padding: 15px;
+            display: inline-block;
+            margin: 10px;
+            transition: transform 0.3s;
+            width: 120px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .streaks-badge:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Badge Icon */
+        .badge-icon {
+            font-size: 2em;
+            color: #007acc;
+            margin-bottom: 10px;
+        }
+
+        /* Badge Title */
+        .badge-title {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        /* Badge Description */
+        .badge-description {
+            font-size: 0.9em;
+            color: #555;
+        }
+
+        /* Navigation Button Styles */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .nav-buttons .btn {
+            padding: 0.5rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons .btn:hover {
+            background-color: #0056b3;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="streaks-badges-container">
+        <h1>Your Streaks & Badges</h1>
+
+        <!-- Streak Section -->
+        <div class="streak-section">
+            <h2>Current Streak:</h2>
+            <div class="streak-counter">15 Days</div>
+        </div>
+
+        <!-- Badges Section -->
+        <div class="badges-section">
+            <h2>Badges Earned:</h2>
+            <div class="streaks-badge">
+                <div class="badge-icon"><i class="fas fa-star"></i></div>
+                <div class="badge-title">Star Learner</div>
+                <div class="badge-description">Complete 5 lessons in a row.</div>
+            </div>
+            <div class="streaks-badge">
+                <div class="badge-icon"><i class="fas fa-trophy"></i></div>
+                <div class="badge-title">Quiz Master</div>
+                <div class="badge-description">Score 80% or higher on quizzes.</div>
+            </div>
+            <div class="streaks-badge">
+                <div class="badge-icon"><i class="fas fa-medal"></i></div>
+                <div class="badge-title">Consistent Learner</div>
+                <div class="badge-description">Learn for 10 consecutive days.</div>
+            </div>
+            <div class="streaks-badge">
+                <div class="badge-icon"><i class="fas fa-rocket"></i></div>
+                <div class="badge-title">Speedy Learner</div>
+                <div class="badge-description">Finish a lesson in under 5 minutes.</div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a href="progress-tracker.html" class="btn">Back</a>
+            <a href="index.html" class="btn">Home</a>
+        </div>
+    </div>
+
+</body>
+</html>

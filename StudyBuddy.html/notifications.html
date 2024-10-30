@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy - Notifications</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Notifications Section Styles */
+        .notification-section {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .notification-section h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        /* Notification Items */
+        .notification-item {
+            margin: 1rem 0;
+            padding: 1rem;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        /* Navigation Button Styles */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .nav-buttons .btn {
+            padding: 0.5rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>StudyBuddy Notifications</h1>
+        <p>Stay updated with your study sessions!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Notifications Section -->
+        <section class="notification-section">
+            <h2>Your Notifications</h2>
+            <div class="notification-item">New study material uploaded!</div>
+            <div class="notification-item">You have a quiz due tomorrow!</div>
+            <div class="notification-item">Don't forget your study group meeting at 5 PM.</div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a href="profile.html" class="btn">Back</a>
+            <a href="index.html" class="btn">Home</a>
+            <a href="progress_tracker.html" class="btn">Next</a> <!-- Link to Progress Tracker -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 StudyBuddy. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

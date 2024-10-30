@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker - StudyBuddy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Styling */
+        body {
+            background-color: #f4f8fc;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Progress Tracker Container */
+        .tracker-container {
+            max-width: 600px;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        /* Title Styling */
+        .tracker-container h1 {
+            font-size: 2em;
+            color: #007acc;
+            margin-bottom: 20px;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            background-color: #eaf4fc;
+            border-radius: 6px;
+            height: 30px;
+            margin: 15px 0;
+            position: relative;
+        }
+
+        /* Filler for Progress Bar */
+        .progress-filler {
+            background-color: #007acc;
+            height: 100%;
+            border-radius: 6px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: width 0.5s ease;
+        }
+
+        /* Percentage Text */
+        .percentage {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+            line-height: 30px; /* Center text vertically */
+        }
+
+        /* Progress Summary */
+        .progress-summary {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Example Progress Item */
+        .progress-item {
+            margin: 20px 0;
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        /* Navigation Button Styles */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .nav-buttons .btn {
+            padding: 0.5rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="tracker-container">
+        <h1>Progress Tracker</h1>
+        <div class="progress-item">Chapter 1: <span class="progress-summary">Complete</span></div>
+        <div class="progress-bar">
+            <div class="progress-filler" style="width: 100%;">
+                <div class="percentage">100%</div>
+            </div>
+        </div>
+
+        <div class="progress-item">Chapter 2: <span class="progress-summary">In Progress</span></div>
+        <div class="progress-bar">
+            <div class="progress-filler" style="width: 70%;">
+                <div class="percentage">70%</div>
+            </div>
+        </div>
+
+        <div class="progress-item">Chapter 3: <span class="progress-summary">Not Started</span></div>
+        <div class="progress-bar">
+            <div class="progress-filler" style="width: 0%;">
+                <div class="percentage">0%</div>
+            </div>
+        </div>
+
+        <div class="progress-item">Chapter 4: <span class="progress-summary">Not Started</span></div>
+        <div class="progress-bar">
+            <div class="progress-filler" style="width: 0%;">
+                <div class="percentage">0%</div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a href="notifications.html" class="btn">Back</a>
+            <a href="index.html" class="btn">Home</a>
+            <a href="streaks-badges.html" class="btn">Next</a>
+        </div>
+    </div>
+
+</body>
+</html>

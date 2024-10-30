@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy - Features</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #333;
+        }
+
+        /* Feature Section Styles */
+        .feature-section {
+            margin-top: 2rem;
+            padding: 1rem;
+            background-color: #e6f7ff;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .feature-section h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        /* Upload Section */
+        .upload-section {
+            margin: 1.5rem 0;
+        }
+
+        .upload-section input[type="file"] {
+            padding: 8px;
+            font-size: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        /* Options Section */
+        .options-section {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .option-card {
+            width: 150px;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .option-card:hover {
+            transform: scale(1.05);
+            background-color: #cfe7ff;
+        }
+
+        .option-card h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+        }
+
+        /* Outcome Section */
+        .outcome-section {
+            margin-top: 2rem;
+            display: none;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Navigation Button Styles */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .nav-buttons .btn {
+            padding: 0.5rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <h1>StudyBuddy Features</h1>
+        <p>Select options to make your study sessions more interactive!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Upload Section -->
+        <section class="feature-section">
+            <h2>Upload Pre-Class Material</h2>
+            <div class="upload-section">
+                <input type="file" id="fileUpload">
+            </div>
+        </section>
+
+        <!-- Options Section -->
+        <section class="feature-section">
+            <h2>Choose a Feature</h2>
+            <div class="options-section">
+                <div class="option-card" onclick="showOutcome('story')">
+                    <h3>Story-Driven Content</h3>
+                    <p>Transform study materials into an engaging story!</p>
+                </div>
+                <div class="option-card" onclick="showOutcome('summary')">
+                    <h3>Color-Coded Summaries</h3>
+                    <p>Get organized highlights for quick review.</p>
+                </div>
+                <div class="option-card" onclick="showOutcome('quiz')">
+                    <h3>Pop-Up Quiz</h3>
+                    <p>Test your knowledge with quick questions!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outcome Section -->
+        <section id="outcome" class="outcome-section">
+            <div id="outcome-content"></div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a href="profile.html" class="btn">Back</a>
+            <a href="index.html" class="btn">Home</a>
+            <a href="notifications.html" class="btn">Next</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 StudyBuddy. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Dynamic Outcome -->
+    <script>
+        function showOutcome(feature) {
+            const outcome = document.getElementById("outcome");
+            const outcomeContent = document.getElementById("outcome-content");
+            outcome.style.display = "block";
+
+            if (feature === "story") {
+                outcomeContent.innerHTML = `
+                    <h2>Story-Driven Content</h2>
+                    <p>Once upon a time in your study journey, new insights began to unfold...</p>
+                    <p>This feature brings your notes to life as a captivating story!</p>
+                `;
+            } else if (feature === "summary") {
+                outcomeContent.innerHTML = `
+                    <h2>Color-Coded Summary</h2>
+                    <p>Key terms are highlighted in <span style="color: blue;">blue</span>, and core concepts in <span style="color: green;">green</span>.</p>
+                    <p>Find everything you need at a glance!</p>
+                `;
+            } else if (feature === "quiz") {
+                outcomeContent.innerHTML = `
+                    <h2>Pop-Up Quiz</h2>
+                    <div class="quiz-question">
+                        <p>1. What is the main concept of the material?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q1"> Option A</label>
+                            <label><input type="radio" name="q1"> Option B</label>
+                            <label><input type="radio" name="q1"> Option C</label>
+                        </div>
+                    </div>
+                    <div class="quiz-question">
+                        <p>2. Can you define the key term?</p>
+                        <div class="quiz-options">
+                            <label><input type="radio" name="q2"> Definition A</label>
+                            <label><input type="radio" name="q2"> Definition B</label>
+                            <label><input type="radio" name="q2"> Definition C</label>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+    </script>
+
+</body>
+</html>
+

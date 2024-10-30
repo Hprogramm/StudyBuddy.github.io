@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyBuddy - Choose Your Character</title>
+    <!-- CSS Styling -->
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        /* Character Selection Styles */
+        .character-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: nowrap;
+        }
+
+        .character-card {
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            text-align: center;
+            width: 150px;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            transition: transform 0.3s;
+        }
+
+        .character-card:hover {
+            transform: scale(1.05);
+        }
+
+        .character-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .voice-btn {
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .voice-btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Navigation Button Styles */
+        .nav-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .nav-buttons .btn {
+            padding: 0.5rem 1.5rem;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-buttons .btn:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Choose Your StudyBuddy Character</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <section id="character-selection" class="section">
+            <h2>Select Your Cartoon Character</h2>
+            <div class="character-grid">
+                <!-- Mickey Mouse -->
+                <div class="character-card">
+                    <img src="https://static.wikia.nocookie.net/disneyfanon/images/a/a4/Mickey_Mouse_normal.jpg" alt="Mickey Mouse">
+                    <h3>Mickey Mouse</h3>
+                    <button class="voice-btn">Play Voice</button>
+                </div>
+
+                <!-- Tom -->
+                <div class="character-card">
+                    <img src="https://i.pinimg.com/564x/2b/53/67/2b5367670e356226e215c5baba2355f3.jpg" alt="Tom">
+                    <h3>Tom</h3>
+                    <button class="voice-btn">Play Voice</button>
+                </div>
+
+                <!-- Simba -->
+                <div class="character-card">
+                    <img src="https://static.wikia.nocookie.net/thelionkingfanon/images/8/83/Simba-TLG2.png" alt="Simba">
+                    <h3>Simba</h3>
+                    <button class="voice-btn">Play Voice</button>
+                </div>
+
+                <!-- Elsa -->
+                <div class="character-card">
+                    <img src="https://i.pinimg.com/564x/4f/75/75/4f75751faebebb0de3056d77ef81e11f.jpg" alt="Elsa">
+                    <h3>Elsa</h3>
+                    <button class="voice-btn">Play Voice</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a href="about.html" class="btn">Back</a> <!-- Link to About Page -->
+            <a href="index.html" class="btn">Home</a> <!-- Link to Home Page -->
+            <a href="features.html" class="btn">Next</a> <!-- Link to Features Page -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 StudyBuddy. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
